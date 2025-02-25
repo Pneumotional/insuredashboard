@@ -1,0 +1,9 @@
+python
+dash
+dash-iconify
+dash-bootstrap-components
+plotly
+pandas
+chardet
+SQLAlchemy
+requests

@@ -1,0 +1,722 @@
+/* General styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+
+body {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container styling */
+.container-fluid {
+    padding: 10px;
+}
+
+/* Card styling */
+.card {
+    background-color: #2d2d2d;
+    border: 1px solid #404040;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: #383838;
+    border-bottom: 1px solid #404040;
+    padding: 15px;
+}
+.Navbar
+{
+    background-color: #404040 !important;
+}
+
+
+.card-body {
+    padding: 20px;
+}
+
+/* Filter card specific styling */
+.filter-card {
+    position: sticky;
+    top: 20px;
+    height: calc(100vh - 40px);
+    overflow-y: auto;
+}
+
+/* Upload box styling */
+.upload-box {
+    border: 2px dashed #404040;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    transition: all 0.3s ease;
+}
+
+.upload-box:hover {
+    border-color: #666;
+    background-color: #404040;
+}
+
+/* Dropdown styling */
+.dash-dropdown .Select-control {
+    background-color: #333;
+    border-color: #404040;
+    color: white;
+}
+
+.dash-dropdown .Select-menu-outer {
+    background-color: #333;
+    border-color: #404040;
+}
+
+.dash-dropdown .Select-option {
+    background-color: #333;
+    color: white;
+}
+
+.dash-dropdown .Select-option:hover {
+    background-color: #404040;
+}
+
+/* Dashboard card specific styling */
+.dashboard-card {
+    height: 100%;
+}
+
+.dashboard-card .card-body {
+    padding: 15px;
+}
+
+/* Success message styling */
+.success-message {
+    color: #4CAF50;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    background-color: rgba(76, 175, 80, 0.1);
+    border: 1px solid rgba(76, 175, 80, 0.2);
+}
+
+/* Table styling */
+.dash-table-container {
+    margin: 20px 0;
+}
+
+.dash-header {
+    font-weight: bold !important;
+    text-align: left !important;
+    padding: 12px !important;
+}
+
+.dash-cell {
+    padding: 12px !important;
+    text-align: left !important;
+}
+
+/* Graph container styling */
+.js-plotly-plot {
+    width: 100%;
+    height: 100%;
+}
+
+/* Add these styles to your existing style.css file */
+
+.summary-card {
+    background-color: #2d2d2d;
+    border: 1px solid #404040;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.summary-card:hover {
+    transform: translateY(-5px);
+}
+
+.premium-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4CAF50;  /* Green color for values */
+    margin: 1rem 0;
+}
+
+.card-title {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.text-muted {
+    color: #888 !important;
+}
+
+/* Base styles */
+:root {
+    --dark-bg: #1a1a1a;
+    --dark-card: #2d2d2d;
+    --dark-border: #404040;
+    --dark-text: #ffffff;
+    --dark-muted: #888;
+    --light-bg: #eff4fd;
+    --light-card: #ffffff;
+    --light-border: #e0e0e0;
+    --light-text: #333333;
+    --light-muted: #666;
+    --accent-green: #4CAF50;
+}
+
+/* Theme-specific styles */
+.app-container {
+    transition: all 0.3s ease;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.dark-theme {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+.light-theme {
+    background-color: var(--light-bg);
+    color: var(--light-text);
+}
+
+/* Card styles */
+.dark-theme .card {
+    background-color: var(--dark-card);
+    border: 1px solid var(--dark-border);
+}
+
+.light-theme .card {
+    background-color: var(--light-card);
+    border: 1px solid var(--light-border);
+}
+
+/* Theme toggle card */
+.theme-card {
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+}
+
+.theme-switch {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Summary cards */
+.summary-card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.summary-card:hover {
+    transform: translateY(-5px);
+}
+
+.dark-theme .summary-card {
+    background-color: var(--dark-card);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.light-theme .summary-card {
+    background-color: var(--light-card);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.premium-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--accent-green);
+    margin: 1rem 0;
+}
+
+/* Text styles */
+.dark-theme .card-title {
+    color: var(--dark-text);
+}
+
+.light-theme .card-title {
+    color: var(--light-text);
+}
+
+.dark-theme .text-muted {
+    color: var(--dark-muted) !important;
+}
+
+.light-theme .text-muted {
+    color: var(--light-muted) !important;
+}
+
+/* Filter styles */
+.dark-theme .dash-dropdown .Select-control {
+    background-color: var(--dark-card);
+    border-color: var(--dark-border);
+    color: var(--dark-text);
+}
+
+.light-theme .dash-dropdown .Select-control {
+    background-color: var(--light-card);
+    border-color: var(--light-border);
+    color: var(--light-text);
+}
+
+/* Upload box */
+.dark-theme .upload-box {
+    border: 2px dashed var(--dark-border);
+    background-color: var(--dark-card);
+}
+
+.light-theme .upload-box {
+    border: 2px dashed var(--light-border);
+    background-color: var(--light-card);
+}
+
+/* Success message */
+.success-message {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+.dark-theme .success-message {
+    background-color: rgba(76, 175, 80, 0.1);
+    border: 1px solid rgba(76, 175, 80, 0.2);
+}
+
+.light-theme .success-message {
+    background-color: rgba(76, 175, 80, 0.05);
+    border: 1px solid rgba(76, 175, 80, 0.1);
+}
+
+
+/* Add these styles to your existing style.css file */
+
+/* Dark theme dropdown styles */
+.dark-theme .dash-dropdown .Select-control,
+.dark-theme .dash-dropdown .Select-menu-outer,
+.dark-theme .dash-dropdown .Select-value,
+.dark-theme .dash-dropdown .Select-value-label,
+.dark-theme .dash-dropdown .Select-placeholder,
+.dark-theme .dash-dropdown .Select-input > input {
+    background-color: var(--dark-card) !important;
+    color: var(--dark-text) !important;
+    border-color: var(--dark-border) !important;
+}
+
+.dark-theme .dash-dropdown .Select-menu-outer {
+    border: 1px solid var(--dark-border);
+}
+
+.dark-theme .dash-dropdown .Select-option {
+    background-color: var(--dark-card);
+    color: var(--dark-text);
+}
+
+.dark-theme .dash-dropdown .Select-option:hover {
+    background-color: #404040;
+}
+
+.dark-theme .dash-dropdown .Select-option.is-selected {
+    background-color: #505050;
+}
+
+.dark-theme .dash-dropdown .Select-option.is-focused {
+    background-color: #404040;
+}
+
+/* Light theme dropdown styles */
+.light-theme .dash-dropdown .Select-control,
+.light-theme .dash-dropdown .Select-menu-outer,
+.light-theme .dash-dropdown .Select-value,
+.light-theme .dash-dropdown .Select-value-label,
+.light-theme .dash-dropdown .Select-placeholder,
+.light-theme .dash-dropdown .Select-input > input {
+    background-color: var(--light-card) !important;
+    color: var(--light-text) !important;
+    border-color: var(--light-border) !important;
+}
+
+.light-theme .dash-dropdown .Select-menu-outer {
+    border: 1px solid var(--light-border);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.light-theme .dash-dropdown .Select-option {
+    background-color: var(--light-card);
+    color: var(--light-text);
+}
+
+.light-theme .dash-dropdown .Select-option:hover {
+    background-color: #f0f0f0;
+}
+
+.light-theme .dash-dropdown .Select-option.is-selected {
+    background-color: #e8e8e8;
+}
+
+.light-theme .dash-dropdown .Select-option.is-focused {
+    background-color: #f0f0f0;
+}
+
+/* Common dropdown styles */
+.dash-dropdown .Select-control {
+    border-radius: 4px;
+    color: white;
+}
+
+.dash-dropdown .Select-menu-outer {
+    border-radius: 0 0 4px 4px;
+    margin-top: -1px;
+    color: white;
+}
+
+.dash-dropdown .Select-option {
+    padding: 8px 10px;
+    transition: background-color 0.2s ease;
+    color: white;
+}
+
+/* Fix for dropdown arrow color */
+.dark-theme .dash-dropdown .Select-arrow {
+    border-color: var(--dark-text) transparent transparent !important;
+}
+
+.light-theme .dash-dropdown .Select-arrow {
+    border-color: var(--light-text) transparent transparent !important;
+}
+
+/* Add these styles to your style.css file */
+H5
+{
+    color: rgb(142, 246, 129);
+}
+/* Header text color based on theme */
+.dark-theme h1 {
+    color: var(--dark-text);
+}
+
+.light-theme h1 {
+    color: var(--light-text);
+}
+
+/* Card header styles for both themes */
+.dark-theme .card-header {
+    background-color: var(--dark-card);
+    color: var(--dark-text);
+    border-bottom: 1px solid var(--dark-border);
+}
+
+.light-theme .card-header {
+    background-color: var(--light-card);
+    color: var(--light-text);
+    border-bottom: 1px solid var(--light-border);
+}
+
+/* Theme switch styling */
+.header-row {
+    margin-bottom: 1rem;
+}
+
+.theme-card {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Card header text styles */
+.dark-theme .card-header h4,
+.dark-theme .card-header h5 {
+    color: var(--dark-text);
+}
+
+.light-theme .card-header h4,
+.light-theme .card-header h5 {
+    color: var(--light-text);
+}
+
+/* Improved theme switch styling */
+.theme-switch-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.theme-switch-card {
+    background: rgba(45, 45, 45, 0.9) !important;
+    backdrop-filter: blur(8px);
+    border-radius: 12px !important;
+    padding: 8px 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+.dark-theme .theme-switch-card {
+    background: rgba(45, 45, 45, 0.9) !important;
+}
+
+.light-theme .theme-switch-card {
+    background: rgba(255, 255, 255, 0.9) !important;
+}
+
+.theme-switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.theme-switch .form-check-label {
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-left: 8px;
+}
+
+
+
+
+/* Add to your existing style.css file */
+
+/* Broker page specific styles */
+.broker-card {
+    height: 100%;
+    margin-bottom: 1rem;
+}
+
+/* Rankings table styles */
+.rankings-table {
+    height: calc(100vh - 200px);
+    overflow-y: auto;
+}
+
+/* Summary cards */
+.broker-summary-card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.broker-summary-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Table styles */
+.comparison-table {
+    margin-top: 1rem;
+}
+
+.positive-difference {
+    color: #00C851 !important;
+    font-weight: bold;
+}
+
+.negative-difference {
+    color: #ff4444 !important;
+    font-weight: bold;
+}
+
+/* Filter section */
+.filter-section {
+    position: sticky;
+    top: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .broker-card {
+        margin-bottom: 1rem;
+    }
+    
+    .rankings-table {
+        height: 500px;
+    }
+}
+
+/* Add to assets/style.css */
+#chat-messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+#chat-messages::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+}
+
+#chat-messages::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+}
+
+#chat-messages::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.dot {
+    animation: dot-fade 1.4s infinite;
+    margin-left: 4px;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes dot-fade {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 1; }
+}
+
+#chat-messages > div {
+    animation: message-appear 0.3s ease-out;
+}
+
+@keyframes message-appear {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#chat-input:focus {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+#chat-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+
+
+/* Chat interface styles */
+.chat-container-fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 350px;
+    z-index: 1000;
+}
+
+.chat-toggle-btn {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.chat-card {
+    border-radius: 15px;
+    background-color: #2b2b2b;
+    border: 1px solid #3a3a3a;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+}
+
+.chat-body {
+    height: 400px;
+    overflow-y: auto;
+    padding: 15px;
+    background-color: #2b2b2b;
+}
+
+.chat-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.chat-input {
+    background-color: #3a3a3a;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.chat-input:focus {
+    background-color: #3a3a3a;
+    border: 1px solid #4a4a4a;
+    box-shadow: none;
+    color: white;
+}
+
+.chat-message-right {
+    margin-left: auto;
+}
+
+.chat-container::-webkit-scrollbar {
+    width: 5px;
+}
+
+.chat-container::-webkit-scrollbar-track {
+    background: #2b2b2b;
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+    background: #4a4a4a;
+    border-radius: 10px;
+}
+
+/* Dark theme message styles */
+.bg-secondary {
+    background-color: #3a3a3a !important;
+}
+
+.bg-info {
+    background-color: #3f3f3f !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Typing animation */
+.typing-indicator {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background-color: #6c757d;
+    border-radius: 15px;
+}
+
+.typing-dot {
+    width: 8px;
+    height: 8px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    animation: typing-dot 1.4s infinite ease-in-out;
+}
+
+@keyframes typing-dot {
+    0%, 80%, 100% { 
+        transform: scale(0);
+    }
+    40% { 
+        transform: scale(1);
+    }
+}
