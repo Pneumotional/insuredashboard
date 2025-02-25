@@ -7,3 +7,4 @@ pandas
 chardet
 SQLAlchemy
 requests
+selenium
